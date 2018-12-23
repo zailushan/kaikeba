@@ -1,0 +1,11 @@
+ #乐观锁依赖表
+    create table goods(
+        id int primary key auto_increment,#商品编号
+        name varchar(200),#商品名称
+        status int,       #商品状态  1 商品上架  2.商品下架
+        version int       #商品被修改的编号
+    
+    );
+    
+    insert into goods values
+    (1,"电水壶",1,1),(2,"电热宝",1,1)

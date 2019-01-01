@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>OneServlet</servlet-name>
+        <servlet-class>com.kkb.controller.OneServlet</servlet-class>
+        <!-- 设置启动时加载,避免用户等待时间过长,通常写二以后的数字 -->
+        <!--<load-on-startup>2</load-on-startup>-->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OneServlet</servlet-name>
+        <!-- 访问的优先级 完全匹配 > 目录匹配 > 扩展名匹配 -->
+        <!-- 完全匹配 -->
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>myServlet</servlet-name>
+        <servlet-class>com.kkb.controller.MyServlet</servlet-class>
+        <!-- 设置启动时加载,避免用户等待时间过长,通常写二以后的数字 -->
+        <!--<load-on-startup>2</load-on-startup>-->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>myServlet</servlet-name>
+        <!-- 访问的优先级 完全匹配 > 目录匹配 > 扩展名匹配 -->
+        <!-- 完全匹配 -->
+        <url-pattern>/test2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>threeServlet</servlet-name>
+        <servlet-class>com.kkb.util.ThreeServlet</servlet-class>
+        <!-- 设置启动时加载,避免用户等待时间过长,通常写二以后的数字 -->
+        <!--<load-on-startup>2</load-on-startup>-->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>threeServlet</servlet-name>
+        <!-- 访问的优先级 完全匹配 > 目录匹配 > 扩展名匹配 -->
+        <!-- 完全匹配 -->
+        <url-pattern>/three</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>

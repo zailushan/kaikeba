@@ -28,7 +28,7 @@
         <property name="password" value="${jdbc.password}"/>
       </dataSource>
     </environment>
-    
+
   </environments>
  
   <mappers>

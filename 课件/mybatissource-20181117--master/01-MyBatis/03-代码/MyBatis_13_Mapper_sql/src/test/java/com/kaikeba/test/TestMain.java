@@ -1,12 +1,7 @@
 package com.kaikeba.test;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.sql.Statement;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
+import com.kaikeba.beans.Dept;
+import com.kaikeba.dao.DeptDao;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -15,8 +10,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.kaikeba.beans.Dept;
-import com.kaikeba.dao.DeptDao;
+import java.io.IOException;
+import java.io.InputStream;
 
 public class TestMain {
 	
